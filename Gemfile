@@ -6,6 +6,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'rails', '5.2.3'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '1.2.3'
+gem 'bootstrap-sass', '3.4.1'
 # Use Puma as the app server
 gem 'puma', '~> 3.12.4'
 # Reduces boot times through caching; required in config/boot.rb
@@ -59,6 +60,7 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
+  gem 'test_helper', '0.0.1'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
   gem 'mini_backtrace', '0.1.3'
