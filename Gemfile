@@ -28,7 +28,9 @@ gem 'jbuilder', '~> 2.11.2'
 gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
-
+gem 'faker', '>= 2.19.0'
+gem 'will_paginate', '3.3.1'
+gem 'bootstrap-will_paginate', '1.0.0'
 gem 'sdoc',         '1.0.0', group: :doc
 gem 'thor',         '>= 1.1.0'
 # Use ActiveStorage variant
