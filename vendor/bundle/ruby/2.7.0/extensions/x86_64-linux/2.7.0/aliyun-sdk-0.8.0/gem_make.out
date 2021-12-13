@@ -1,0 +1,16 @@
+current directory: /home/antony/workspace/sample_app/vendor/bundle/ruby/2.7.0/gems/aliyun-sdk-0.8.0/ext/crcx
+/usr/bin/ruby2.7 -I /usr/lib/ruby/2.7.0 -r ./siteconf20211213-6337-1udy5s7.rb extconf.rb
+creating Makefile
+
+current directory: /home/antony/workspace/sample_app/vendor/bundle/ruby/2.7.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make "DESTDIR=" clean
+
+current directory: /home/antony/workspace/sample_app/vendor/bundle/ruby/2.7.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make "DESTDIR="
+compiling crc64_ecma.c
+compiling crcx.c
+linking shared-object aliyun/crcx.so
+
+current directory: /home/antony/workspace/sample_app/vendor/bundle/ruby/2.7.0/gems/aliyun-sdk-0.8.0/ext/crcx
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 crcx.so ./.gem.20211213-6337-ezbd77/aliyun

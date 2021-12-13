@@ -33,8 +33,10 @@ gem 'will_paginate', '3.3.1'
 gem 'bootstrap-will_paginate', '1.0.0'
 gem 'sdoc',         '1.0.0', group: :doc
 gem 'thor',         '>= 1.1.0'
-# Use ActiveStorage variant
-# gem 'mini_magick', '~> 4.8'
+
+gem 'carrierwave', '~> 2.2.2'
+gem 'mini_magick', '~> 4.11'
+gem 'fog', '>= 2.2.0'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

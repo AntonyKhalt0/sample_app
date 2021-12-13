@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+	has_many :microposts, dependent: :destroy
 	attr_accessor :remember_token, :activation_token, :reset_token
 	before_save :downcase_email
 	before_create :create_activation_digest
@@ -30,7 +31,7 @@ class User < ApplicationRecord
 	# Return true, if token = digest
 	def authenticated?(attribute, token)
 		digest = send("#{attribute}_digest")
-		return false digest.nil?
+		return false if digest.nil?
 		BCrypt::Password.new(digest).is_password?(token)
 	end
 
@@ -60,6 +61,10 @@ class User < ApplicationRecord
 	# Send email for reset password
 	def send_password_reset_email
 		UserMailer.password_reset(self).deliver_now
+	end
+
+	def feed
+		Micropost.where("user_id = ?", id)
 	end
 
 	private 
